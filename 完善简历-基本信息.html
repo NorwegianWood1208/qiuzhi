@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>基本信息</title>
+		<link rel="stylesheet" href="css/commons.css" />
+		<link rel="stylesheet" href="css/date.css"/>
+		<link rel="stylesheet" href="css/lxfs.css" />
+		<link rel="stylesheet" href="css/xbtc.css" />
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+		<script type="text/javascript" src="js/date.js" ></script>
+		<script type="text/javascript" src="js/iscroll.js" ></script>
+		<script type="text/javascript">
+		 $(function(){
+		 	$("#tanchu2").click(function(){
+  					 $(".page").show();
+  					  $("#dateshadow").show();
+			});
+			$(".tanchu").date();
+			$("#datePlugin").click(function(){
+  					 $("#datePlugin #dateshadow").hide();
+  					 $("#datePlugin #datePage").hide();
+			});
+			
+		 });
+		 
+		 $(function(){
+		 	$(".xb-clik").click(function(){
+  					 $(".zzc").show();
+  					  $(".xb-tc").show();
+			});
+			
+			$(".zzc").click(function(){
+  					 $(".zzc").hide();
+  					 $(".xb-tc").hide();
+			});
+		 });
+		 
+		  $(function(){
+		 	$(".hyzk-clik").click(function(){
+  					 $(".zzc").show();
+  					  $(".hyzk-tc").show();
+			});
+			
+			$(".zzc").click(function(){
+  					 $(".zzc").hide();
+  					 $(".hyzk-tc").hide();
+			});
+		 });
+		 
+		 $(function(){
+		 	$(".zgxl-clik").click(function(){
+  					 $(".zzc").show();
+  					  $(".xl-tc").show();
+			});
+			
+			$(".zzc").click(function(){
+  					 $(".zzc").hide();
+  					 $(".xl-tc").hide();
+			});
+		 });
+		 
+		 $(function(){
+		 	$(".dnsp-clik").click(function(){
+  					 $(".zzc").show();
+  					  $(".dnsp-tc").show();
+			});
+			
+			$(".zzc").click(function(){
+  					 $(".zzc").hide();
+  					 $(".dnsp-tc").hide();
+			});
+		 });
+		</script>
+	</head>
+	<body>
+		<div class="zzc"></div><!--选择电脑水平弹出 开始-->
+		<div class="dnsp-tc">
+			<ul>
+				<li class="conter">选择电脑水平</li>
+				<li>未填</li>
+				<li>精通</li>
+				<li>熟练</li>
+				<li>一般</li>
+			</ul>
+		</div><!--选择英语水平 结束 -->
+		<div class="zzc"></div><!--选择英语水平弹出 开始-->
+		<div class="yysp-tc">
+			<ul>
+				<li class="conter">选择英语水平</li>
+				<li>未填</li>
+				<li>精通</li>
+				<li>熟练</li>
+				<li>较好</li>
+				<li>一般</li>
+			</ul>
+		</div><!--选择英语水平 结束 -->
+		<div class="zzc"></div><!--选择学历弹出 开始-->
+		<div class="xl-tc">
+			<ul>
+				<li class="conter">选择学历</li>
+				<li>高中</li>
+				<li>中专</li>
+				<li>大专</li>
+				<li>本科</li>
+				<li>硕士</li>
+				<li>博士</li>
+			</ul>
+		</div><!--选择学历弹出 结束 -->
+		<div class="zzc"></div><!--婚姻状况弹出 开始-->
+		<div class="hyzk-tc">
+			<ul>
+				<li class="conter">选择婚姻状况</li>
+				<li>保密</li>
+				<li>未婚</li>
+				<li>已婚</li>
+				<li>离异</li>
+			</ul>
+		</div><!--婚姻状况弹出 结束 -->
+		<div class="zzc"></div><!--婚姻状况弹出 开始-->
+		<div class="hyzk-tc">
+			<ul>
+				<li class="conter">选择婚姻状况</li>
+				<li>保密</li>
+				<li>未婚</li>
+				<li>已婚</li>
+				<li>离异</li>
+			</ul>
+		</div><!--婚姻状况弹出 结束 -->
+	    <div id="datePlugin"></div><!--时间弹出  -->
+		<div class="zzc"></div><!--性别弹出 开始-->
+		<div class="xb-tc">
+			<ul>
+				<li class="conter">选择性别</li>
+				<li>男</li>
+				<li>女</li>
+			</ul>
+		</div><!--性别弹出 结束 -->
+	    <div id="datePlugin"></div><!--时间弹出  -->
+		<div class="outdiv">
+			<div class="head-top"> <!--表头开始  -->
+				<span class="bt">基本信息</span>
+				<div class="div-1">
+					<img src="img/fanhui-ioc.png" />
+					<span>返回</span>
+				</div>
+				<span class="dl-button">张三</span>
+			</div> <!--表头结束  -->
+			<div class="body-conter" style="bottom:42px; overflow:auto;"><!--页面详情开始  -->
+				<div class="fgx"></div>
+				<div class="zw-div">
+					<ul>
+						<li class="lx-bt">
+							<span>基本信息</span>
+							<i>l 必填  l</i>
+						</li>
+					</ul>
+					<ul class="jtnr">
+						<li>
+							<span class="lie">真实姓名</span>
+							<input name="" type="text" placeholder="请输入姓名"/>
+						</li>
+						<li class="xb-clik">
+							<span class="lie">性       别</span>
+							<span class="dqs">
+								男
+								<img src="img/qianjin-ioc.png" />
+							</span>
+						</li>
+						<li id="tanchu2">
+							<span class="lie ">出生日期</span>
+							<span class="dqs">
+								<span class="tanchu">1978年7月28日</span>
+								<img src="img/qianjin-ioc.png" />
+							</span>
+						</li>
+						<li class="hyzk-clik">
+							<span class="lie">婚姻状况</span>
+							<span class="dqs">
+								未婚
+								<img src="img/qianjin-ioc.png" />
+							</span>
+						</li>
+						<li>
+							<span class="lie">年       龄</span>
+							<input name="" type="text" placeholder="请输入年龄"/>
+						</li>
+						<li>
+							<span class="lie">民       族</span>
+							<input name="" type="text" placeholder="请输入民族"/>
+						</li>
+						<li>
+							<span class="lie">身       高</span>
+							<input name="" type="text" placeholder="请输入身高"/>
+						</li>
+						<li class="zgxl-clik">
+							<span class="lie">最高学历</span>
+							<span class="dqs">
+								本科
+								<img src="img/qianjin-ioc.png" />
+							</span>
+						</li>
+						<li>
+							<span class="lie">毕业学校</span>
+							<input name="" type="text" placeholder="请输入学校"/>
+						</li>
+						<li>
+							<span class="lie">专       业</span>
+							<input name="" type="text" placeholder="请输入专 业"/>
+						</li>
+						<li>
+							<span class="lie">户       籍</span>
+							<span class="dqs">
+								上海-浦东新区
+								<img src="img/qianjin-ioc.png" />
+							</span>
+						</li>
+						<li>
+							<span class="lie">目前所在地</span>
+							<span class="dqs">
+								上海-浦东新区
+								<img src="img/qianjin-ioc.png" />
+							</span>
+						</li>
+						<li class="yysp-clik">
+							<span class="lie">英语水平</span>
+							<span class="dqs">
+								精通
+								<img src="img/qianjin-ioc.png" />
+							</span>
+						</li>
+						<li>
+							<span class="lie">英语证书</span>
+							<input name="" type="text" placeholder="如：CET-4"/>
+						</li>
+						<li class="dnsp-clik">
+							<span class="lie">电脑水平</span>
+							<span class="dqs">
+								精通
+								<img src="img/qianjin-ioc.png" />
+							</span>
+						</li>
+						<li>
+							<span class="lie">电脑证书</span>
+							<input name="" type="text" placeholder="如：计算机三级"/>
+						</li>
+						<li style="border: none;">
+							<span class="lie">电脑证书</span>
+							<input name="" type="text" placeholder="输入证书"/>
+						</li>
+					</ul>
+				</div>
+				<!--底部菜单开始                                                                                                      -->
+				<div style="clear: both;"></div>
+				<div class="dbcd let" style="width: 100%;" >
+					<div id="dbcd">
+						<a href="#" class="bro">首页</a>
+						<a href="#" class="bro">关于</a>
+						<a href="#" class="bro">联系 </a>
+						<a  href="#"style="border: none;" class="bro">反馈</a>
+					</div>
+				</div>
+				<!--底部菜单结束                                                                                                      -->
+			</div> <!--页面详情结束  -->	
+		</div>
+		<div class="dbxq"><!--底部开始  -->
+				保存
+	    </div><!--底部结束  -->
+	</body>
+</html>

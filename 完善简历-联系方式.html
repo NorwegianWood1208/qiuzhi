@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>联系方式</title>
+		<link rel="stylesheet" href="css/commons.css" />
+		<link rel="stylesheet" href="css/lxfs.css" />
+		<link rel="stylesheet" href="css/dbdhys.css" />
+		<link rel="stylesheet" href="css/tanchu-dq.css" />
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#diqu-1").click(function(){
+  					 $(".dq-tc").show();
+  					  $(".zzc").show();
+				});
+				$(".zzc").click(function(){
+  					 $(".dq-tc").hide();
+  					 $(".zzc").hide();
+				});
+				$(".close").click(function(){
+  					 $(".dq-tc").hide();
+  					 $(".zzc").hide();
+				});
+				var mod_menu=$(".mod-menu");//导航模块区
+				var menu=function(){
+				var menuItem=$(".menu-item li");//选择导航列表
+				menuItem.each(function(){
+				var _index=$(this).index();//获取当前选择菜单列表的索引
+				$(this).click(function(){
+				var y = $(this).position().top+1;//获取当前鼠标滑过的列表的顶部坐标
+				$(".menu-cont").show();
+				$(".menu-cont").css("top",0);//需要显示的对应索引内容
+				$(this).addClass("mouse-bg").siblings().removeClass("mouse-bg");
+				
+				$(".menu-cont>div").eq(_index).show().siblings().hide();
+				});
+				});/*导航菜单菜单*/
+		
+				}//展开二级菜单	
+				menu();//执行展开二级菜单函
+			}) 
+				
+			
+		</script>
+	</head>
+	<body>
+		<div class="outdiv dq-tc"><!--弹出地区开始  -->
+			<div class="head-top"style="z-index: 9999;"> <!--表头开始  -->
+				<span class="bt">选择所在地</span>
+				<div class="div-1">
+					<span class="close">取消</span>
+				</div>
+				<span class="dl-button">确定</span>
+			</div> <!--表头结束  -->
+			<div class="mod-menu"><!--分类菜单开始   -->
+        	<ul class="menu-item" style=" border-right: none; "><!--一级菜单列表开始-->
+				<li><a class="colors"  href="#" >北京</a></li>
+				<li><a  href="#" >江苏省</a></li>
+				<li><a  href="#" >安徽省</a></li>
+				<li><a  href="#" >浙江省</a></li>
+				<li><a  href="#" >河北省</a></li>
+				<li><a  href="#" >河南省</a></li>
+				<li><a  href="#" >上海</a></li>
+				<li><a  href="#" >云南省</a></li>
+				<li><a  href="#" >贵州省</a></li>
+				<li><a  href="#" >陕西省</a></li>
+            </ul><!--一级菜单列表结束-->
+			<div class="menu-cont" style="display:none;top:0px;">
+				<div class="menu-cont-list" style="display:none;">
+				  <div class="remeng-shuosuo"><!--北京开始    -->
+        			
+        			<ul>
+        				<li>东城区</li>
+        				<li>朝阳区</li>
+        			</ul>
+        			
+        		</div><!--北京结束    -->
+				</div>
+				<div class="menu-cont-list" style="display:none;">
+				  <div class="remeng-shuosuo" ><!--江苏省开始    -->
+        			<ul>
+        				<li>南京</li>
+        				<li>淮安</li>
+        				<li>苏州</li>
+        		        <li>常州</li>
+        			</ul>
+        		  </div><!--江苏省结束    -->
+				</div>
+				<div class="menu-cont-list" style="display:none;">
+				  <div class="remeng-shuosuo" ><!--安徽省开始    -->
+        			<ul>
+        				<li>合肥</li>
+        			</ul>
+        		  </div><!--安徽省结束    -->
+				</div>
+				<div class="menu-cont-list" style="display:none;">
+				  <div class="remeng-shuosuo" ><!--浙江省开始    -->
+        			<ul>
+        				<li>杭州</li>
+        				<li>杭州 </li>
+        			</ul>
+        		  </div><!--浙江省结束    -->
+				</div>
+			</div>
+		</div><!--分类菜单结束   -->
+		</div>
+		<div class="zzc"></div><!--弹出地区结束  -->
+		<div class="outdiv">
+			<div class="head-top"> <!--表头开始  -->
+				<span class="bt">联系方式</span>
+				<div class="div-1">
+					<img src="img/fanhui-ioc.png" />
+					<span>返回</span>
+				</div>
+				<span class="dl-button">王丹丹</span>
+			</div> <!--表头结束  -->
+			<div class="body-conter" style="bottom:42px; overflow:auto;"><!--页面详情开始  -->
+				<div class="fgx"></div>
+				<div class="zw-div">
+					<ul>
+						<li class="lx-bt">
+							<span>联系方式</span>
+							<i>l 必填  l</i>
+						</li>
+					</ul>
+					<ul class="jtnr">
+						<li id="diqu-1">
+							<span class="lie">目前所在地</span>
+							<span class="dqs">
+								上海-浦东新区
+								<img src="img/qianjin-ioc.png" />
+							</span>
+						</li>
+						<li>
+							<span class="lie">联系电话</span>
+							<input name="" type="text" placeholder="请输入电话号码"/>
+						</li>
+						<li>
+							<span class="lie">电子邮箱</span>
+							<input name="" type="text" placeholder="请输入电子邮箱"/>
+						</li>
+						<li>
+							<span class="lie">QQ</span>
+							<input name="" type="text" placeholder="请输入qq号码"/>
+						</li>
+					</ul>
+				</div>
+				<!--底部菜单开始                                                                                                      -->
+				<div style="clear: both;"></div>
+			
+				<!--底部菜单结束                                                                                                      -->
+			</div> <!--页面详情结束  -->	
+		</div>
+		<div class="dbxq"><!--底部开始  -->
+				保存
+	    </div><!--底部结束  -->
+	    <div>
+	    	
+	    </div>
+	</body>
+</html>
